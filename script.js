@@ -1,8 +1,9 @@
-const slides = document.querySelectorAll('.slide');
-        let index = 0;
+const dropdownBtn = document.querySelectorAll(".dropdown-button");
+const displaywrapper = document.querySelectorAll(".dropdown-wrapper");
+// console.log(dropdown)
+//console.log(displaywrapper)
 
-        setInterval(() => {
-            slides.forEach(slide => slide.classList.remove('active'));
-            slides[index].classList.add('active');
-            index = (index + 1) % slides.length;
-        }, 3000);
+dropdownBtn.forEach((item,index) => item.addEventListener("click",()=>{
+    displaywrapper[index].classList.toggle("active");
+    
+}))

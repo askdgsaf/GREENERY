@@ -35,6 +35,8 @@ nav {
 }
 
 
+
+
 .link-container {
     padding: 16px 0px;
     gap: 28px;
@@ -55,6 +57,67 @@ nav {
     padding: 6px 10px;
 }
 
+.link-container li:hover {
+    border: 2px solid #2D6C3E;
+    color: #2D6C3E;
+    padding: 6px 10px;
+    position: relative;
+    border-radius: 0px 28px 0px 28px;
+}
+
+
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-button {
+    position: relative;
+}
+
+.dropdown-wrapper {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    padding: 12px 24px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 550%;
+}
+
+.dropdown-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.dropdown-content p {
+    margin: 8px 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.dropdown-image {
+    width: 40%;
+    /* padding: 24px; */
+}
+
+.dropdown-image img {
+    width: 100%;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+/* Show dropdown only when hovering on the button */
+/* .dropdown-button:hover .dropdown-wrapper {
+    display: flex;
+} */
+
+.active {
+    display: block;
+}
 
 .profile-container {
     display: flex;
@@ -68,7 +131,7 @@ nav {
 }
 
 .slide {
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.3)), url(./IMAGES/carousel/Misty\ Mountain\ Cycling.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(./IMAGES/carousel/Misty\ Mountain\ Cycling.jpeg);
     width: 100%;
     height: calc(100vh - 15px);
     background-repeat: no-repeat;
@@ -144,7 +207,8 @@ nav {
 
 .primary-button {
     position: relative;
-    z-index: 1; /* make sure the button is above the black bg */
+    z-index: 1;
+    /* make sure the button is above the black bg */
     padding: 16px;
     background: #A5A58D;
     color: #FFF;
@@ -233,6 +297,8 @@ nav {
     font-weight: 400;
 }
 
+
+
 .treading-container {
     margin: 60px 80px;
 }
@@ -266,6 +332,7 @@ nav {
     justify-content: space-evenly;
     gap: 20px;
 }
+
 .tread-card-1 {
     width: 33%;
     display: flex;
@@ -284,20 +351,23 @@ nav {
     height: 100%;
 }
 
-.tread-card-break{
+.tread-card-break {
     display: flex;
     gap: 8px;
     margin-bottom: 52px;
 }
-.tread-card-icon{
+
+.tread-card-icon {
     width: 52px;
     height: 52px;
 }
-.tread-card-img{
+
+.tread-card-img {
     width: 100%;
     object-fit: cover;
 }
-.tread-card-img img{
+
+.tread-card-img img {
     width: 100%;
     height: 100%;
 }
@@ -306,24 +376,336 @@ nav {
     width: 52px;
 }
 
-.tread-card-break h2{
+.tread-card-break h2 {
     font-family: "Nunito";
-font-weight: 400;
-font-size: 24px;
-justify-content: start;
-}
-.tread-card-break p{
-    font-family: "Nunito";
-font-weight: 400;
-font-size: 20px;
+    font-weight: 400;
+    font-size: 24px;
+    justify-content: start;
 }
 
+.tread-card-break p {
+    font-family: "Nunito";
+    font-weight: 400;
+    font-size: 20px;
+}
+
+
+.footprints {
+    margin: 60px 80px;
+}
+
+.footprints h2,
+.footprints p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footprints h2 {
+    color: #2D6C3E;
+    font-family: "Nunito";
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.footprints p {
+    color: rgba(61, 61, 61, 0.84);
+    font-family: "Nunito";
+    font-size: 20px;
+    font-weight: 400;
+
+    text-align: center;
+}
+
+.footprints-grid {
+    display: flex;
+}
+
+.footprints-card {
+    position: relative;
+    width: 413px;
+    height: 439px;
+    left: 707px;
+    top: 2057px;
+    filter: drop-shadow(0px 62px 25px rgba(0, 0, 0, 0.01)) drop-shadow(0px 35px 21px rgba(0, 0, 0, 0.05)) drop-shadow(0px 16px 16px rgba(0, 0, 0, 0.09)) drop-shadow(0px 4px 9px rgba(0, 0, 0, 0.1));
+    border-radius: 20px;
+    /* Curvy shape for the card */
+    overflow: hidden;
+    /* Ensures content stays within curved borders */
+    background-color: #fff;
+    /* Optional: for card background */
+}
+
+.footprints-card img {
+    width: 100%;
+    height: 70%;
+    /* Adjust to leave space for text */
+    object-fit: cover;
+    /* Ensures image covers area without distortion */
+    border-radius: 20px 20px 0 0;
+    /* Curvy top corners, straight bottom */
+}
+
+.footprints-text {
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    /* Adjust text color as needed */
+}
+
+/* 
+.footprints-card {
+    width: 33%;
+    overflow: hidden;
+}
+
+.footprints-card img {
+    width: 100%;
+} */
 
 
 
+/* DISCOVERRRRRRRRRRRR TRAILSSSSSSSSSSSSS */
+.ghorepani-carousel-img {
+    background-image: linear-gradient(rgba(0, 0, 0, -0.9)), url(./IMAGES/ghorepani/poonhill.jpg);
+    width: 100%;
+    height: calc(100vh - 20vh);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.info-section-wrapper {
+    margin: 48px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 74px;
+}
+
+.info-section {
+    background-color: #EEEEEE;
+    border-radius: 16px;
+    padding: 16px;
+    display: flex;
+    gap: 16px;
+    width: 100%;
+}
+
+.info-section h2 {
+    color: #2D6C3E;
+    size: 24px;
+    font-weight: 500;
+}
+
+.info-section p {
+    size: 20px;
+}
+
+.eco-friendly-wrapper {
+    margin: 60px 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.eco-friendly-wrapper2 {
+    margin-top: 60px;
+    display: flex;
+    width: 100%;
+}
+
+.eco-friendly {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.eco-text-1 {
+    font-family: "Nunito";
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.eco-text-2 {
+    font-family: "Nunito";
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
+.forest-preservation {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.forest-text-1 {
+    font-family: "Nunito";
+    font-size: 28px;
+    font-weight: 600;
+    width: 90%;
+    text-align: center;
+
+}
+
+.forest-text-2 {
+    font-family: "Nunito";
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wildlife-practice {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wildlife-text-1 {
+    font-family: "Nunito";
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.wildlife-text-2 {
+    font-family: "Nunito";
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.gallery {
+    margin: 80px;
+    display: flex;
+    object-fit: cover;
+}
+
+.gallery-grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    width: 100%;
+    /* max-width: 1200px; */
+}
+
+/* First major section: Left Side (Column 1-3) */
+.gallery-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    grid-column: 1 / 3;
+    gap: 10px;
+}
+
+.gallery-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    grid-column: 1 / -1;
+}
+
+.gallery-1-1-1,
+.gallery-1-1-2 {
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-1-2 {
+    grid-column: 1 / -1;
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 16px;
+    grid-column: 3 / 5;
+}
+
+.gallery-2-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+/* Image Styling */
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* FOREST BATHING.... */
+.forest-carousel-container{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(./IMAGES/forestbathing/sereneForest.jpeg);
+    width: 100%;
+    height: calc(100vh - 20vh);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.forest-carousel-text{
+    font-family: "Playfair";
+    font-size: 64px;
+    font-weight: 700;
+    letter-spacing: 2.56px;
+
+    background: linear-gradient(180deg, #FFF 28.57%, rgba(255, 255, 255, 0.18) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.forest-bathing-container{
+    margin: 60px 80px;
+}
+.forest-bathing-container h2{
+    display: flex;
+    justify-content: center;
+    color: #2D6C3E;
+    font-weight: 600;
+    font-size: 48px;
+}     
+.forest-bathing{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 48px;
+    gap: 34px;
+    width: 100%;
+}
+.bathing-img-container{
+    width: 50%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.bathing-img-container img{
+    width: 100%;
+    object-fit: contain;
+}
+.bathing-text-container{
+    width: 50%;
+    font-family: "Nunito";
+    font-size: 20px;
+    color: #3D3D3D;
+    line-height: 30px;
+}
 
 
 
@@ -437,7 +819,7 @@ font-size: 20px;
 .ph--plant-duotone {
     display: inline-block;
     color: #2D6C3E;
-   width: 52px;
+    width: 52px;
     height: 52px;
     --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Cg fill='%23000'%3E%3Cpath d='M138.54 149.46C106.62 96.25 149.18 43.05 239.63 48.37c5.37 90.45-47.88 133.02-101.09 101.09M16.26 88.26c-3.8 64.61 34.21 95 72.21 72.21c22.8-38-7.6-76.01-72.21-72.21' opacity='0.2'/%3E%3Cpath d='M247.63 47.89a8 8 0 0 0-7.52-7.52c-51.76-3-93.32 12.74-111.18 42.22c-11.8 19.48-11.78 43.16-.16 65.74a71.4 71.4 0 0 0-14.17 26.95L98.33 159c7.82-16.33 7.52-33.36-1-47.49C84.09 89.73 53.62 78 15.79 80.27a8 8 0 0 0-7.52 7.52c-2.23 37.83 9.46 68.3 31.25 81.5A45.8 45.8 0 0 0 63.44 176A54.6 54.6 0 0 0 87 170.33l25 25V224a8 8 0 0 0 16 0v-29.49a55.6 55.6 0 0 1 12.27-35a73.9 73.9 0 0 0 33.31 8.4a60.9 60.9 0 0 0 31.83-8.86c29.48-17.84 45.26-59.4 42.22-111.16M86.06 146.74l-24.41-24.4a8 8 0 0 0-11.31 11.31l24.41 24.41c-9.61 3.18-18.93 2.39-26.94-2.46C32.47 146.31 23.79 124.32 24 96c28.31-.25 50.31 8.47 59.6 23.81c4.85 8.01 5.64 17.33 2.46 26.93m111.06-1.36c-13.4 8.11-29.15 8.73-45.15 2l53.69-53.7a8 8 0 0 0-11.31-11.32L140.65 136c-6.76-16-6.15-31.76 2-45.15c13.94-23 47-35.8 89.33-34.83c.96 42.32-11.84 75.42-34.86 89.36'/%3E%3C/g%3E%3C/svg%3E");
     background-color: currentColor;
@@ -461,7 +843,7 @@ font-size: 20px;
 
 .game-icons--box-unpacking {
     display: inline-block;
-    color:  #4E6EA0;
+    color: #4E6EA0;
     width: 52px;
     height: 52px;
     --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23000' d='M61.39 25.39C93.9 58.33 115.8 96.55 133.3 134.5c4.9-12 7.3-22.2 18.9-32.3c47 26.5 60.3 43.3 64.4 80.4h66.8c1.8-36 7.6-56.3 36.5-82.81c15.9 12.41 20 26.91 28.1 40.71c8.5-38.9 37.3-81.28 76.7-101.89c-52.5-11.56-108.5-.43-153.3 17.54c9.3 6.39 22.7 11.23 26.9 19.5c-19 9.79-39.5 42.35-51.2 69.35c-14.1-25.1-43.5-53.44-72-67.64c11.5-11.58 23-15.79 34.5-22.89C176.6 36.1 117.5 27 61.39 25.39m8.85 175.21l-41.25 110H137.8l41.2-110zm134.76 0l41.2 110H483l-41.2-110zm-22 40.6l-32.8 87.4H73v158h110zm18 0v245.4h238v-158H233.8z'/%3E%3C/svg%3E");
@@ -472,4 +854,61 @@ font-size: 20px;
     mask-repeat: no-repeat;
     -webkit-mask-size: 100% 100%;
     mask-size: 100% 100%;
+}
+
+
+.uiw--d-arrow-right::after {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: -0.125em;
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='%23000' fill-rule='evenodd' d='m2.542 2.154l7.254 7.26q.204.21.204.483a.73.73 0 0 1-.204.5l-7.575 7.398q-.575.476-1.022 0q-.448-.475 0-.98l7.08-6.918l-6.754-6.763q-.356-.514.066-.935q.422-.42.951-.045m9 0l7.254 7.26q.204.21.204.483a.73.73 0 0 1-.204.5l-7.575 7.398q-.575.476-1.022 0q-.449-.475 0-.98l7.08-6.918l-6.754-6.763q-.355-.514.066-.935q.422-.42.951-.045'/%3E%3C/svg%3E");
+}
+
+.material-symbols--elevation::after {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    vertical-align: -0.125em;
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%232D6C3E' d='m2.05 21l6.45-9h5.05L21 3.3V21zm1.75-5.825l-1.6-1.15L6.5 8h5.05l4.7-5.475l1.5 1.3L12.45 10H7.5z'/%3E%3C/svg%3E");
+}
+
+.material-symbols--mountain-flag::after {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    vertical-align: -0.125em;
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%232D6C3E' d='m7.025 11.825l.825-1.7q.25-.525.738-.825T9.65 9H11V2h7l-1 2l1 2h-5v3h1.275q.575 0 1.038.3t.737.8l.875 1.75l-3 2L12 12.875l-1.925.975zM2 22l4.125-8.375l3.8 2.525L12 15.125l2.075 1.025l3.75-2.475L22 22z'/%3E%3C/svg%3E");
+}
+
+.fluent--weather-hail-day-24-filled::after {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    vertical-align: -0.125em;
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%232D6C3E' d='M13 20a1 1 0 1 1 0 2a1 1 0 0 1 0-2m-3.5-1a1 1 0 1 1 0 2a1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2a1 1 0 0 1 0-2M13.002 6.009c3.168 0 4.966 2.097 5.227 4.63h.08a3.687 3.687 0 0 1 3.692 3.683a3.687 3.687 0 0 1-3.692 3.682H7.694a3.687 3.687 0 0 1-3.692-3.682a3.687 3.687 0 0 1 3.692-3.683h.08c.263-2.55 2.06-4.63 5.228-4.63m-8.635 4.155a.75.75 0 0 1-.314.935l-.091.045l-.927.384a.75.75 0 0 1-.665-1.34l.091-.046l.927-.384a.75.75 0 0 1 .98.406m6.487-4.833l-.171.058c-1.785.63-3.063 2.005-3.615 3.823l-.07.25l-.059.238l-.206.039a4.6 4.6 0 0 0-1.67.714a3.942 3.942 0 0 1 5.791-5.122m-7.913.031l.105.035l.926.384a.75.75 0 0 1-.468 1.42l-.106-.034l-.926-.384a.75.75 0 0 1 .469-1.42m3.815-2.986l.045.091l.384.926a.75.75 0 0 1-1.34.666L5.8 3.968l-.384-.926a.75.75 0 0 1 1.34-.665m4.353-.319a.75.75 0 0 1 .441.875l-.035.105l-.383.926a.75.75 0 0 1-1.421-.468l.035-.106l.383-.926a.75.75 0 0 1 .98-.406'/%3E%3C/svg%3E");
+}
+
+.ph--house-line-bold::after {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    vertical-align: -0.125em;
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Cpath fill='%232D6C3E' d='M240 204h-12v-60a12 12 0 0 0 12.49-19.78l-98.35-98.37a20 20 0 0 0-28.28 0L15.51 124.2A12 12 0 0 0 28 144v60H16a12 12 0 0 0 0 24h224a12 12 0 0 0 0-24M52 121.65l76-76l76 76V204h-40v-52a12 12 0 0 0-12-12h-48a12 12 0 0 0-12 12v52H52ZM140 204h-24v-40h24Z'/%3E%3C/svg%3E");
+}
+
+.mdi--flower::after {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    vertical-align: -0.125em;
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%232D6C3E' d='M3 13a9 9 0 0 0 9 9c0-5-4.03-9-9-9m9-7.5A2.5 2.5 0 0 1 14.5 8a2.5 2.5 0 0 1-2.5 2.5A2.5 2.5 0 0 1 9.5 8A2.5 2.5 0 0 1 12 5.5m-6.4 4.75a2.5 2.5 0 0 0 2.5 2.5c.53 0 1.02-.17 1.4-.44v.19A2.5 2.5 0 0 0 12 15a2.5 2.5 0 0 0 2.5-2.5v-.19c.38.27.87.44 1.4.44a2.5 2.5 0 0 0 2.5-2.5c0-1-.59-1.85-1.43-2.25c.84-.4 1.43-1.26 1.43-2.25a2.5 2.5 0 0 0-2.5-2.5c-.53 0-1.02.16-1.4.44V3.5A2.5 2.5 0 0 0 12 1a2.5 2.5 0 0 0-2.5 2.5v.19c-.38-.28-.87-.44-1.4-.44a2.5 2.5 0 0 0-2.5 2.5c0 .99.59 1.85 1.43 2.25c-.84.4-1.43 1.25-1.43 2.25M12 22a9 9 0 0 0 9-9c-5 0-9 4-9 9'/%3E%3C/svg%3E");
+}
+
+.game-icons--hummingbird::after {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    vertical-align: -0.125em;
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%232D6C3E' d='M139.7 23.52c-9.1 30.54-16.5 61.64-12.7 91.58c4.2 32.7 21 64.9 65.7 95.7c-53.6 74.8-86.1 204.4-59.3 277.7c10.9-54 14.2-97.8 53.5-144.6c77.5-25.6 123.9-37.6 140.3-125.7c6.2-14.7 12.6-19.3 31.9-24.7c10.6-2.9 22.2-7.5 22.1-19.2c-.2-49.3-28.3-68.4-57.6-67.9c-29.4.5-60 20.6-65.4 49.8c-6 1.8-11.9 4.5-17.7 8c-62.9-43.7-82.1-85.86-100.8-140.68M32.03 107c10.8 27.2 26.44 54.6 49.2 76.1c24.27 22.9 56.47 39.3 100.87 42.2c-34.5-24.2-54.8-50.3-65.2-77.2c-29.4-10.9-56.47-25-84.87-41.1m300.07 26.3a12.24 12.24 0 0 1 12.2 12.2a12.24 12.24 0 0 1-12.2 12.2a12.24 12.24 0 0 1-12.2-12.2a12.24 12.24 0 0 1 12.2-12.2m60 56.1c-3.5 5.1-7.1 10.2-16.1 13.2c33.9 25.3 79.1 76.5 104 105c-11.2-33.2-55.8-88.6-87.9-118.2'/%3E%3C/svg%3E");
 }
