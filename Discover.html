@@ -13,7 +13,7 @@
 
 <body>
     <nav>
-        <div class="logo">
+        <div class="logo" id="redirectImage">
             <img src="./name.png" alt="Greenery Logo">
         </div>
         <div class="link-container">
@@ -22,17 +22,19 @@
                     <div class="dropdown">
                         <div class="dropdown-button">Discover Trails</div>
                         <div class="dropdown-wrapper">
-                            <div class="dropdown-content">
-<p><span class="uiw--d-arrow-right"></span> <a href="Discover.html">Ghorepani Poonhill Trek</a></p>                                <p><span class="uiw--d-arrow-right"></span> Annapurna Circuit Trek: Thorong La Pass</p>
-                                <p><span class="uiw--d-arrow-right"></span> Annapurna Base Camp Trek</p>
-                                <p><span class="uiw--d-arrow-right"></span> Langtang Valley Trek</p>
-                                <p><span class="uiw--d-arrow-right"></span> Upper Mustang Trek</p>
-                                <p><span class="uiw--d-arrow-right"></span> Mardi Himal Trek</p>
-                                <p><span class="uiw--d-arrow-right"></span> Rara Lake Trek</p>
-                            </div>
-                            <div class="dropdown-image">
-                                <img src="/IMAGES/dropdownimages/sunsetTrail.jpeg" alt="sunsetTrail">
-                            </div>
+                                <div class="dropdown-content">
+                                    <p><span class="uiw--d-arrow-right"></span> <a href="Discover.html">Ghorepani Poonhill
+                                            Trek</a></p>
+                                    <p><span class="uiw--d-arrow-right"></span> Annapurna Circuit Trek: Thorong La Pass</p>
+                                    <p><span class="uiw--d-arrow-right"></span> Annapurna Base Camp Trek</p>
+                                    <p><span class="uiw--d-arrow-right"></span> Langtang Valley Trek</p>
+                                    <p><span class="uiw--d-arrow-right"></span> Upper Mustang Trek</p>
+                                    <p><span class="uiw--d-arrow-right"></span> Mardi Himal Trek</p>
+                                    <p><span class="uiw--d-arrow-right"></span> Rara Lake Trek</p>
+                                </div>
+                                <div class="dropdown-image">
+                                    <img src="/IMAGES/dropdownimages/sunsetTrail.png" alt="sunsetTrail">
+                                </div>
                         </div>
                     </div>
                 </li>
@@ -47,20 +49,47 @@
                                 <p><span class="uiw--d-arrow-right"></span> Volunteer Opportunities</p>
                             </div>
                             <div class="dropdown-image">
-                                <img src="/IMAGES/dropdownimages/sunsetTrail.jpeg" alt="sunsetTrail">
+                                <img src="/IMAGES/dropdownimages/treehouse.png" alt="sunsetTrail">
                             </div>
                         </div>
                     </div>
                 </li>
-                <li>Nature Journal</li>
-                <li>Sustainability</li>
+                <li>
+                    <div class="dropdown">
+                        <div class="dropdown-button">Nature Journal</div>
+                        <div class="dropdown-wrapper">
+                            <div class="dropdown-content">
+                                <p><span class="uiw--d-arrow-right"></span> <a href="articles.html">Articles, Guides and Community Stories</a></p>
+                                <p><span class="uiw--d-arrow-right"></span> Wildlife and Plant Guides</p>
+                                <p><span class="uiw--d-arrow-right"></span> Leave No Trace Principles</p>
+                                <p><span class="uiw--d-arrow-right"></span> User Stories</p>
+                            </div>
+                            <div class="dropdown-image">
+                                <img src="/IMAGES/dropdownimages/deer.png" alt="sunsetTrail">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <div class="dropdown-button">Sustainability</div>
+                        <div class="dropdown-wrapper">
+                            <div class="dropdown-content">
+                                <p><span class="uiw--d-arrow-right"></span> Carbon Footprint Calculate</p>
+                                <p><span class="uiw--d-arrow-right"></span> Pack in, Pack out Guide</p>
+                                <p><span class="uiw--d-arrow-right"></span> Conservative Partnership</p>                            </div>
+                            <div class="dropdown-image">
+                                <img src="/IMAGES/dropdownimages/plant.png" alt="sunsetTrail">
+                            </div>
+                        </div>
+                    </div>
+                </li>
                 <li>About</li>
             </ul>
         </div>
         <div class="profile-container">
             <span class="material-symbols-light--search-rounded" style="color: #2e8755;"></span>
             <span class="iconamoon--profile-thin" style="color: #2e8755;"></span>
-            <!--<span class="system-uicons--cross" style="color: #2e8755;"></span>-->
         </div>
     </nav>
 
@@ -124,18 +153,18 @@
                         <p>forests, bursting to collor.</p>
                     </div>
                 </div>
-                    <div class="wildlife-practice">
-                        <div class="wildlife-logo">
-                            <span class="game-icons--hummingbird"></span>
-                        </div>
-                        <div class="wildlife-text-1">
-                            Wildlife Respect Practices
-                        </div>
-                        <div class="wildlife-text-2">
-                            <p>Observe Himalayan birds and targur monkeys</p>
-                            <p> with minimal disturbances.</p>
-                        </div>
+                <div class="wildlife-practice">
+                    <div class="wildlife-logo">
+                        <span class="game-icons--hummingbird"></span>
                     </div>
+                    <div class="wildlife-text-1">
+                        Wildlife Respect Practices
+                    </div>
+                    <div class="wildlife-text-2">
+                        <p>Observe Himalayan birds and targur monkeys</p>
+                        <p> with minimal disturbances.</p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -143,7 +172,8 @@
             <div class="gallery-grid-container">
                 <div class="gallery-1">
                     <div class="gallery-1-1">
-                        <div class="gallery-1-1-1"><img src="./IMAGES/ghorepani/trekRoute.jpg" alt="people walking in trails"></div>
+                        <div class="gallery-1-1-1"><img src="./IMAGES/ghorepani/trekRoute.jpg"
+                                alt="people walking in trails"></div>
                         <div class="gallery-1-1-2"><img src="./IMAGES/ghorepani/sky.jpg" alt="sky"></div>
                     </div>
                     <div class="gallery-1-2">
@@ -157,10 +187,11 @@
                     <div class="gallery-2-2">
                         <img src="./IMAGES/ghorepani/sunset.jpg" alt="sunset view">
                         <img src="./IMAGES/ghorepani/redFlower.jpg" alt="rhododendron forest">
-                </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
 </body>
 
 </html>

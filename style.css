@@ -23,15 +23,22 @@ nav {
     font-size: 20px;
     line-height: 100%;
     letter-spacing: 0%;
+
+    position: relative;
 }
 
 
 .logo {
     width: 94px;
+    cursor: pointer;
 }
 
 .logo img {
     width: 100%;
+    transition: transform 0.2s ease;
+}
+.logo img:hover{
+    transform: scale(1.05);
 }
 
 
@@ -61,62 +68,8 @@ nav {
     border: 2px solid #2D6C3E;
     color: #2D6C3E;
     padding: 6px 10px;
-    position: relative;
+    /* position: relative; */
     border-radius: 0px 28px 0px 28px;
-}
-
-
-
-.dropdown {
-    display: inline-block;
-}
-
-.dropdown-button {
-    position: relative;
-}
-
-.dropdown-wrapper {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #f9f9f9;
-    padding: 12px 24px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    width: 550%;
-}
-
-.dropdown-content {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.dropdown-content p {
-    margin: 8px 0;
-    font-size: 20px;
-    color: #333;
-}
-
-.dropdown-image {
-    width: 40%;
-    /* padding: 24px; */
-}
-
-.dropdown-image img {
-    width: 100%;
-    border: 2px solid black;
-    padding: 5px;
-}
-
-/* Show dropdown only when hovering on the button */
-/* .dropdown-button:hover .dropdown-wrapper {
-    display: flex;
-} */
-
-.active {
-    display: block;
 }
 
 .profile-container {
@@ -125,6 +78,68 @@ nav {
     justify-content: space-between;
     gap: 24px;
 }
+
+
+
+.dropdown{
+    display: inline-block;
+    position: relative;
+    height: 100%;
+}
+.dropdown-button{
+    position: relative;
+    cursor: pointer;
+}
+.dropdown-wrapper{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    padding: 12px 24px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 630px;
+    margin-top: -1px;
+    overflow: hidden;
+    object-fit: contain;
+
+    /* Deepseek suggested: Add smooth transition  */
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+.dropdown-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.dropdown-content p {
+    margin: 8px 0;
+    font-size: 20px;
+    color: #333;
+} 
+.dropdown-image {
+    width: 200px;
+    position: absolute;
+    left: 66%;
+    top: 10%;
+    height: 150px;
+    overflow: hidden;
+}
+.dropdown-image img {
+    width: 100%;
+    border: 2px solid black;
+    padding: 5px;
+    object-fit: cover;
+}
+.active{
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
 
 .carousel {
     width: 100%;
@@ -171,7 +186,7 @@ nav {
     font-family: "Playfair";
     font-size: 64px;
     font-weight: 700;
-    letter-spacing: 2.56px;
+    letter-spacing: 2.56px; 
 
     background: linear-gradient(180deg, #FFF 28.57%, rgba(255, 255, 255, 0.18) 100%);
     background-clip: text;
