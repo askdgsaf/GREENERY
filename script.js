@@ -42,6 +42,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+const searchIcon = document.getElementById("searchIcon");
+const searchContainer = document.getElementById("searchContainer");
+console.log(searchIcon)
+searchIcon.addEventListener('click', () =>{
+    searchContainer.classList.toggle("active");
+});
+
+
+//UGHHHHHHHHHHH SEARCHBOXXXXXXXXXX
 //UGHHHHH NAVBARRRRR
 // const dropdownBtn = document.querySelectorAll(".dropdown-button");
 // const displaywrapper = document.querySelectorAll(".dropdown-wrapper");

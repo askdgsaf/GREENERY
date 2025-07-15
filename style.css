@@ -84,13 +84,32 @@ nav {
     justify-content: space-between;
     gap: 24px;
 }
+.searchContainer {
+    display: inline-block;
+}
 
+.search-box{
+    display: none;
+    width: 800px;
+    height: 50px;
+    border-color: #2D6C3E;
+    padding: 16px 16px;
+    border-radius: 12px;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.searchContainer.active .search-box{
+    display: flex; 
+}
 /* NAVBAR SECTION COMPLETED */
+
 
 /* DROPDOWN SECTION */
 .dropdown {
     display: inline-block;
-    position: relative;
+    /* position: relative; */
     height: 100%;
 }
 
@@ -103,7 +122,7 @@ nav {
     display: none;
     position: absolute;
     top: 100%;
-    left: 0;
+    left: 50;
     background-color: #f9f9f9;
     padding: 12px 24px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
@@ -266,6 +285,7 @@ nav {
     line-height: 1.4;
     letter-spacing: 0.5px;
 }
+
 .aboutUs-container h2 {
     color: #2D6C3E;
     font-size: 28px;
@@ -275,16 +295,17 @@ nav {
 }
 
 
-.quick-link-wrapper{
+.quick-link-wrapper {
     width: 30%;
     margin-left: 50px;
     font-weight: 400;
 }
 
-.quick-info{
+.quick-info {
     margin-top: 60px;
     letter-spacing: 1px;
 }
+
 .quick-link-container {
     margin-left: 40px;
 }
@@ -308,7 +329,8 @@ nav {
     color: #2D6C3E;
     cursor: pointer;
 }
-.footer-final{
+
+.footer-final {
     background-color: #2D6C3E;
     font-family: "Nunito";
     font-size: 20px;
@@ -317,7 +339,8 @@ nav {
 
     padding: 20px;
 }
-.footer-final p{
+
+.footer-final p {
     justify-self: center;
     align-self: center;
 }
@@ -1515,6 +1538,7 @@ nav {
 /* ICONS FROM ICONIFY */
 .material-symbols-light--search-rounded {
     display: inline-block;
+    cursor: pointer;
     width: 52px;
     height: 52px;
     --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M9.539 15.23q-2.398 0-4.065-1.666Q3.808 11.899 3.808 9.5t1.666-4.065T9.539 3.77t4.064 1.666T15.269 9.5q0 1.042-.369 2.017t-.97 1.668l5.909 5.907q.14.14.15.345q.009.203-.15.363q-.16.16-.354.16t-.354-.16l-5.908-5.908q-.75.639-1.725.989t-1.96.35m0-1q1.99 0 3.361-1.37q1.37-1.37 1.37-3.361T12.9 6.14T9.54 4.77q-1.991 0-3.361 1.37T4.808 9.5t1.37 3.36t3.36 1.37'/%3E%3C/svg%3E");
@@ -1527,18 +1551,13 @@ nav {
     mask-size: 100% 100%;
 }
 
-.iconamoon--profile-thin {
+.tabler--calculator::after {
     display: inline-block;
-    width: 52px;
-    height: 52px;
-    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='%23000' stroke-width='1'%3E%3Cpath stroke-linejoin='round' d='M4 18a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z'/%3E%3Ccircle cx='12' cy='7' r='3'/%3E%3C/g%3E%3C/svg%3E");
-    background-color: currentColor;
-    -webkit-mask-image: var(--svg);
-    mask-image: var(--svg);
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    -webkit-mask-size: 100% 100%;
-    mask-size: 100% 100%;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    vertical-align: -0.125em;
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='%232D6C3E' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'%3E%3Cpath d='M4 5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z'/%3E%3Cpath d='M8 8a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1zm0 6v.01m4-.01v.01m4-.01v.01M8 17v.01m4-.01v.01m4-.01v.01'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 .system-uicons--cross {
