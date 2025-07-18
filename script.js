@@ -43,10 +43,14 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 const searchIcon = document.getElementById("searchIcon");
+const crossIcon = document.getElementById("crossIcon")
 const searchContainer = document.getElementById("searchContainer");
-console.log(searchIcon)
+
 searchIcon.addEventListener('click', () =>{
-    searchContainer.classList.toggle("active");
+    searchContainer.classList.add("active");
+});
+crossIcon.addEventListener('click', () =>{
+    searchContainer.classList.remove('active');
 });
 
 
