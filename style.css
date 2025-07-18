@@ -505,12 +505,18 @@ nav {
     border-radius: 20px;
     padding: 10px 12px;
     gap: 16px;
+    cursor: pointer;
+}
+.story-card:hover img{
+    
+    transform: scale(1.05);
 }
 
 .story-card img {
     width: 100%;
     border-radius: 20px;
     overflow: hidden;
+    transition: transform 0.5s ease-in-out;
 }
 
 
@@ -525,8 +531,13 @@ nav {
     font-family: "Nunito";
     font-size: 28px;
     font-weight: 400;
+    transition: transform 0.5s ease-out;
 }
+.story-text-container:hover h2{
+    transform: scale(1.02);
+    text-decoration: underline;
 
+}
 .story-text-container p {
     color: #5C5C5C;
     font-family: "Nunito";
@@ -655,32 +666,26 @@ nav {
 }
 
 .footprints-grid {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, auto);   /* 2 rows */
+    gap: 30px;
+    column-gap: 20px;
 }
 
 .footprints-card {
-    position: relative;
-    width: 413px;
-    height: 439px;
-    left: 707px;
-    top: 2057px;
     filter: drop-shadow(0px 62px 25px rgba(0, 0, 0, 0.01)) drop-shadow(0px 35px 21px rgba(0, 0, 0, 0.05)) drop-shadow(0px 16px 16px rgba(0, 0, 0, 0.09)) drop-shadow(0px 4px 9px rgba(0, 0, 0, 0.1));
     border-radius: 20px;
-    /* Curvy shape for the card */
     overflow: hidden;
-    /* Ensures content stays within curved borders */
     background-color: #fff;
     /* Optional: for card background */
 }
 
 .footprints-card img {
     width: 100%;
-    height: 70%;
-    /* Adjust to leave space for text */
+    height: 65%;
     object-fit: cover;
-    /* Ensures image covers area without distortion */
     border-radius: 20px 20px 0 0;
-    /* Curvy top corners, straight bottom */
 }
 
 .footprints-text {
@@ -688,18 +693,10 @@ nav {
     text-align: center;
     font-size: 16px;
     color: #333;
-    /* Adjust text color as needed */
+    display: flex;
+    flex-shrink: 0;
 }
 
-/* 
-.footprints-card {
-    width: 33%;
-    overflow: hidden;
-}
-
-.footprints-card img {
-    width: 100%;
-} */
 
 
 
@@ -707,11 +704,40 @@ nav {
 .ghorepani-carousel-img {
     background-image: linear-gradient(rgba(0, 0, 0, -0.9)), url(./IMAGES/ghorepani/poonhill.jpg);
     width: 100%;
-    height: calc(100vh - 20vh);
+    height: calc(100vh - 10vh);
     background-repeat: no-repeat;
     background-size: cover;
 }
+.ghorepani-carousel-text {
+    display: flex;
+    justify-content: center;
+    
 
+    flex-direction: column;
+    width: 100%;
+    gap: 25px;
+}
+/*
+.ghorepani-carousel-text h1 {
+    font-family: "Playfair";
+    font-size: 64px;
+    font-weight: 700;
+    letter-spacing: 2.56px;
+
+    background: linear-gradient(180deg, #FFF 28.57%, rgba(255, 255, 255, 0.18) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ghorepani-carousel-text h4 {
+    color: rgba(255, 255, 255, 0.80);
+    text-align: center;
+    font-family: "Nunito";
+    font-size: 20px;
+    font-weight: 500;
+    max-width: 856px;
+} */
 .info-section-wrapper {
     margin: 48px 80px;
     display: flex;
