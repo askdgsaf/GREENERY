@@ -709,20 +709,26 @@ nav {
     background-size: cover;
 }
 .ghorepani-carousel-text {
+    height: 100%;
     display: flex;
+    align-items: center;
     justify-content: center;
-    
+    color: #e4e4e4;
 
     flex-direction: column;
     width: 100%;
     gap: 25px;
 }
-/*
+
 .ghorepani-carousel-text h1 {
     font-family: "Playfair";
-    font-size: 64px;
+    font-size: 48px;
     font-weight: 700;
     letter-spacing: 2.56px;
+    padding: 15px;
+
+    border-top: 5px solid#e4e4e4;
+    border-bottom: 5px solid#e4e4e4;
 
     background: linear-gradient(180deg, #FFF 28.57%, rgba(255, 255, 255, 0.18) 100%);
     background-clip: text;
@@ -733,11 +739,11 @@ nav {
 .ghorepani-carousel-text h4 {
     color: rgba(255, 255, 255, 0.80);
     text-align: center;
-    font-family: "Nunito";
-    font-size: 20px;
+    font-family: "Playfair";
+    font-size: 32px;
     font-weight: 500;
     max-width: 856px;
-} */
+} 
 .info-section-wrapper {
     margin: 48px 80px;
     display: flex;
