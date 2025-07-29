@@ -1507,7 +1507,7 @@ nav {
 }
 
 .explore-img-container {
-    width: 50%;
+    width: 40%;
     overflow: hidden;
 }
 
@@ -1516,7 +1516,7 @@ nav {
 }
 
 .explore-text-container {
-    width: 50%;
+    width: 60%;
     overflow: hidden;
 }
 
@@ -1529,6 +1529,7 @@ nav {
     font-family: "Nunito";
     font-weight: 600;
     color: #2D6C3E;
+    justify-self: center;
 }
 
 .explore-text-header p:first-of-type {
@@ -1537,6 +1538,7 @@ nav {
     font-weight: 400;
     color: #2D6C3E;
     justify-self: center;
+    margin-bottom: 30px;
 }
 
 .explore-text-container p {
@@ -1548,9 +1550,105 @@ nav {
     justify-self: center;
 }
 
+.articles-grid-wrapper{
+    margin: 24px 80px 60px 80px;
+    
+}
+.articles-grid{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    row-gap: 40px;
+}
+.articles-grid-header h2{
+    color: #2D6C3E;
+    justify-self: center;
+    font-size: 48px;
+    margin-bottom: 24px;
+}
+.articles-grid-container img{
+    transition: transform 0.4s ease-in-out;
+}
+.articles-grid-container img:hover{
+    transform: scale(1.02);
+}
+
+/* ABOUT US PAGE */
+.aboutus-carousel-container{
+    width: 100%;
+}
+.aboutus-carousel-container img{
+    width: 100%;    
+}
+.aboutus-text{
+    margin: 24px 80px 60px 80px;
+}
+.aboutus-text p{
+    font-size: 20px;
+    color: #3D3D3D;
+    letter-spacing: 1px;
+    line-height: 1.7;
+}
+.aboutus-standfor{
+    margin: 24px 80px 60px 80px;
+}
+.aboutus-standfor h2{
+    color: #2D6C3E;
+    justify-self: center;
+    font-size: 48px;
+    row-gap: 20px;
+}
+
+.section-1{
+    display: flex;
+    width: 100%;
+    column-gap: 10px;
+}
+.section-1-text p{
+    font-size: 20px;
+    color: #3D3D3D;
+    letter-spacing: 1px;
+    line-height: 1.7;
+}
+/* first word -color green and underlined */
+/* .section-1-text p::first-letter{
+    color: #2D6C3E;
+} */
+.section-1-img{
+    width: 50%;
+    overflow: hidden;
+    align-self: center;
+}
+.section-1-img img{
+    width: 100%;
+    object-fit: cover;
+}
 
 
-
+.section-2{
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    column-gap: 15px;
+}
+.section-2-text p{
+    font-size: 20px;
+    color: #3D3D3D;
+    letter-spacing: 1px;
+    line-height: 1.7;
+}
+/* first word -color green and underlined */
+/* .section-1-text p::first-letter{
+    color: #2D6C3E;
+} */
+.section-2-img{
+    width: 50%;
+    overflow: hidden;
+    align-self: center;
+}
+.section-2-img img{
+    width: 100%;
+    object-fit: cover;
+}
 
 
 
