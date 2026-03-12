@@ -158,3 +158,95 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+/* LEAVE NO TRACE PRINCIPLES CAROUSEL */
+document.addEventListener("DOMContentLoaded", function () {
+    const carouselContainer = document.querySelector(".lnt-principles .principles-carousel-container");
+    if (!carouselContainer) return;
+
+    const prevBtn = carouselContainer.querySelector(".carousel-nav.prev");
+    const nextBtn = carouselContainer.querySelector(".carousel-nav.next");
+    const cards = carouselContainer.querySelectorAll(".principles-grid .principle-card");
+
+    if (!prevBtn || !nextBtn || cards.length < 2) return;
+
+    const carouselItems = [
+        {
+            image: "./IMAGES/leaveNoTrace/caraousel/1.png",
+            alt: "Mountain trail at sunrise",
+            title: "1. Walk with Intention",
+            description: "Plan your route, carry essentials, and trek with care for every ecosystem you cross."
+        },
+        {
+            image: "./IMAGES/leaveNoTrace/caraousel/2.png",
+            alt: "Forest pathway",
+            title: "2. Stay on the Path",
+            description: "Use marked trails and durable surfaces to protect fragile plants and living soil."
+        },
+        {
+            image: "./IMAGES/leaveNoTrace/caraousel/3.png",
+            alt: "Hikers carrying reusable gear",
+            title: "3. Pack In, Pack Out",
+            description: "Carry all waste back with you and leave every campsite cleaner than you found it."
+        },
+        {
+            image: "./IMAGES/leaveNoTrace/caraousel/4.png",
+            alt: "Camper near low-impact setup",
+            title: "4. Keep Fires Minimal",
+            description: "Prefer a stove when possible, and use established fire rings only where allowed."
+        },
+        {
+            image: "./IMAGES/leaveNoTrace/caraousel/5.png",
+            alt: "Wildlife in natural habitat",
+            title: "5. Respect Wildlife",
+            description: "Observe from a distance, avoid feeding animals, and protect their natural behavior."
+        },
+        {
+            image: "./IMAGES/leaveNoTrace/caraousel/6.png",
+            alt: "Group of trekkers on mountain ridge",
+            title: "6. Share the Trail",
+            description: "Be courteous to fellow trekkers, yield when needed, and keep noise levels low."
+        },
+        {
+            image: "./IMAGES/leaveNoTrace/caraousel/7.png",
+            alt: "Hands planting in healthy soil",
+            title: "7. Protect What You Love",
+            description: "Leave natural objects where they are and support local conservation wherever you travel."
+        }
+    ];
+
+    let startIndex = 0;
+
+    function setCardData(card, item) {
+        const image = card.querySelector("img");
+        const title = card.querySelector(".principle-info h3");
+        const description = card.querySelector(".principle-info p");
+
+        if (!image || !title || !description) return;
+
+        image.src = item.image;
+        image.alt = item.alt;
+        title.textContent = item.title;
+        description.textContent = item.description;
+    }
+
+    function renderCarousel() {
+        const firstItem = carouselItems[startIndex % carouselItems.length];
+        const secondItem = carouselItems[(startIndex + 1) % carouselItems.length];
+
+        setCardData(cards[0], firstItem);
+        setCardData(cards[1], secondItem);
+    }
+
+    prevBtn.addEventListener("click", function () {
+        startIndex = (startIndex - 1 + carouselItems.length) % carouselItems.length;
+        renderCarousel();
+    });
+
+    nextBtn.addEventListener("click", function () {
+        startIndex = (startIndex + 1) % carouselItems.length;
+        renderCarousel();
+    });
+
+    renderCarousel();
+});
+
