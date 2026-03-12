@@ -118,3 +118,43 @@ crossIcon.addEventListener('click', () =>{
 //         btn.setAttribute("aria-expanded", "false");
 //     });
 // });
+/* FAQ Accordion */
+document.addEventListener('DOMContentLoaded', function() {
+    var acc = document.getElementsByClassName('accordion');
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener('click', function() {
+            this.classList.toggle('active');
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+                this.querySelector('.plus-icon').innerText = '+';
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + 'px';
+                this.querySelector('.plus-icon').innerText = '-';
+            } 
+        });
+    }
+});
+
+
+/* ITINERARY SCROLL */
+document.addEventListener("DOMContentLoaded", function () {
+    const itineraryContainer = document.querySelector(".itinerary-container");
+    const prevBtn = document.querySelector(".nav-btn.prev");
+    const nextBtn = document.querySelector(".nav-btn.next");
+
+    if (itineraryContainer && prevBtn && nextBtn) {
+        prevBtn.addEventListener("click", () => {
+            const scrollAmount = 680; // Card width (650) + gap (30)
+            itineraryContainer.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+        });
+
+        nextBtn.addEventListener("click", () => {
+            const scrollAmount = 680; // Card width (650) + gap (30)
+            itineraryContainer.scrollBy({ left: scrollAmount, behavior: "smooth" });
+        });
+    }
+});
+
