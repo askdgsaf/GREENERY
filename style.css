@@ -981,12 +981,12 @@ nav {
 .bathing-img-container {
     width: 50%;
     overflow: hidden;
-    border-radius: 20px;
 }
 
 .bathing-img-container img {
     width: 100%;
     object-fit: contain;
+    border-radius: 20px;
 }
 
 .bathing-text-container {
@@ -996,7 +996,7 @@ nav {
     color: #3D3D3D;
     line-height: 30px;
     font-weight: 400;
-    letter-spacing: 1px;
+    letter-spacing: 0.3px;
 }
 
 .why-forest-bathing {
@@ -1571,6 +1571,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 40px;
+    column-gap: 25px;
 }
 
 .articles-grid-header h2 {
@@ -1917,12 +1918,12 @@ nav {
 /* ARTICLE PAGE STYLES */
 
 .article-hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./IMAGES/Articles/guides and experinces/how forest breathes.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./IMAGES/how-forest-breathe-caraousel/carousel.jpg');
     width: 100%;
     height: 70vh;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center; 
 
     display: flex;
     justify-content: center;
