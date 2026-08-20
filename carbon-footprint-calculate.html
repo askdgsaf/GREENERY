@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Footprint Calculator - Greenery</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/6dc780e327.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="logo" id="redirectImage">
+            <img src="./name.png" alt="Greenery Logo">
+        </div>
+        <div class="link-container">
+            <ul>
+                <li>
+                    <div class="dropdown">
+                        <div class="dropdown-button">Discover Trails</div>
+                        <div class="dropdown-wrapper">
+                            <div class="dropdown-content">
+                                <p><span class="uiw--d-arrow-right"></span> <a href="Discover.html">Ghorepani Poonhill
+                                        Trek</a></p>
+                                <p><span class="uiw--d-arrow-right"></span> Annapurna Circuit Trek: Thorong La Pass</p>
+                                <p><span class="uiw--d-arrow-right"></span> Annapurna Base Camp Trek</p>
+                                <p><span class="uiw--d-arrow-right"></span> Langtang Valley Trek</p>
+                                <p><span class="uiw--d-arrow-right"></span> Upper Mustang Trek</p>
+                                <p><span class="uiw--d-arrow-right"></span> Mardi Himal Trek</p>
+                                <p><span class="uiw--d-arrow-right"></span> Rara Lake Trek</p>
+                            </div>
+                            <div class="dropdown-image">
+                                <img src="/IMAGES/dropdownimages/sunsetTrail.png" alt="sunsetTrail">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <div class="dropdown-button">Green Experiences</div>
+                        <div class="dropdown-wrapper">
+                            <div class="dropdown-content">
+                                <p><span class="uiw--d-arrow-right"></span> <a href="forest.html">Forest Bathing</a></p>
+                                <p><span class="uiw--d-arrow-right"></span> Eco-lodging and Treehouses</p>
+                                <p><span class="uiw--d-arrow-right"></span> Nature Workshops</p>
+                                <p><span class="uiw--d-arrow-right"></span> Volunteer Opportunities</p>
+                            </div>
+                            <div class="dropdown-image">
+                                <img src="/IMAGES/dropdownimages/treehouse.png" alt="sunsetTrail">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <div class="dropdown-button">Nature Journal</div>
+                        <div class="dropdown-wrapper">
+                            <div class="dropdown-content">
+                                <p><span class="uiw--d-arrow-right"></span> <a href="articles.html">Articles, Guides and
+                                        Community Stories</a></p>
+                                <p><span class="uiw--d-arrow-right"></span> Wildlife and Plant Guides</p>
+                                <p><span class="uiw--d-arrow-right"></span> <a href="leave-no-trace.html">Leave No Trace Principles</a></p>
+                                <p><span class="uiw--d-arrow-right"></span> User Stories</p>
+                            </div>
+                            <div class="dropdown-image">
+                                <img src="/IMAGES/dropdownimages/deer.png" alt="sunsetTrail">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <div class="dropdown-button">Sustainability</div>
+                        <div class="dropdown-wrapper">
+                            <div class="dropdown-content">
+                                <p><span class="uiw--d-arrow-right"></span> <a href="carbon-footprint.html">Carbon Footprint Calculate</a></p>
+                                <p><span class="uiw--d-arrow-right"></span> Pack in, Pack out Guide</p>
+                                <p><span class="uiw--d-arrow-right"></span> Conservative Partnership</p>
+                            </div>
+                            <div class="dropdown-image">
+                                <img src="/IMAGES/dropdownimages/plant.png" alt="sunsetTrail">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="aboutUs.html" style="text-decoration: none; color: inherit;">About</a></li>
+            </ul>
+        </div>
+        <div class="profile-container">
+            <div class="searchContainer" id="searchContainer">
+                <div class="searchIcon" id="searchIcon"><span class="material-symbols-light--search-rounded"
+                        style="color: #2e8755;"></span></div>
+                <div class="search-box">
+                    <input type="text" class="search-box" placeholder="Search...">
+
+                </div>
+                <div class="crossIcon" id="crossIcon"><span class="system-uicons--cross" style="color: #2e8755;"></span>
+                </div>
+            </div>
+            <a href="carbon-footprint-calculate.html" class="nav-calculator-link" aria-label="Carbon footprint calculator">
+                <span class="tabler--calculator" style="color: #2e8755;"></span>
+            </a>
+        </div>
+    </nav>
+
+    <main class="carbon-calc-page">
+        <section class="calc-hero">
+            <h1>Carbon Footprint Calculate</h1>
+            <p>Track your impact and discover eco-conscious choices for your nature adventures.</p>
+        </section>
+
+        <section class="calc-tabs" role="tablist" aria-label="Carbon footprint categories">
+            <button class="calc-tab active" type="button" data-target="transport" role="tab" aria-selected="true">
+                <i class="fa-solid fa-car"></i> Transportation
+            </button>
+            <button class="calc-tab" type="button" data-target="food" role="tab" aria-selected="false">
+                <i class="fa-solid fa-bowl-food"></i> Food
+            </button>
+            <button class="calc-tab" type="button" data-target="stay" role="tab" aria-selected="false">
+                <i class="fa-solid fa-house"></i> Accommodation
+            </button>
+            <button class="calc-tab" type="button" data-target="water" role="tab" aria-selected="false">
+                <i class="fa-solid fa-droplet"></i> Water Usage
+            </button>
+        </section>
+
+        <section class="calc-layout">
+            <div class="calc-form-card">
+                <div class="calc-panel active" data-type="transport" id="calc-transport" role="tabpanel">
+                    <div class="calc-field">
+                        <label for="travel-mode">Travel Mode</label>
+                        <select id="travel-mode" name="travel-mode">
+                            <option value="car">Car</option>
+                            <option value="bus">Bus</option>
+                            <option value="train">Train</option>
+                            <option value="flight_short">Flight (short haul)</option>
+                            <option value="flight_long">Flight (long haul)</option>
+                            <option value="motorbike">Motorbike</option>
+                        </select>
+                    </div>
+                    <div class="calc-field">
+                        <label for="travel-distance">Distance Travelled (km)</label>
+                        <input id="travel-distance" name="travel-distance" type="number" min="0" step="0.1" placeholder="e.g. 120">
+                    </div>
+                    <div class="calc-field">
+                        <label for="fuel-type">Fuel Type</label>
+                        <select id="fuel-type" name="fuel-type">
+                            <option value="petrol">Petrol</option>
+                            <option value="diesel">Diesel</option>
+                            <option value="hybrid">Hybrid</option>
+                            <option value="electric">Electric</option>
+                        </select>
+                    </div>
+                    <div class="calc-actions">
+                        <button class="calc-submit" type="button">Calculate</button>
+                    </div>
+                </div>
+
+                <div class="calc-panel" data-type="food" id="calc-food" role="tabpanel">
+                    <div class="calc-field">
+                        <label for="diet-type">Diet Type</label>
+                        <select id="diet-type" name="diet-type">
+                            <option value="omnivore">Omnivore</option>
+                            <option value="vegetarian">Vegetarian</option>
+                            <option value="vegan">Vegan</option>
+                        </select>
+                    </div>
+                    <div class="calc-field">
+                        <label for="meal-count">Meals per Week</label>
+                        <input id="meal-count" name="meal-count" type="number" min="0" step="1" placeholder="e.g. 18">
+                    </div>
+                    <div class="calc-field">
+                        <label for="food-waste">Food Waste Level</label>
+                        <select id="food-waste" name="food-waste">
+                            <option value="low">Low</option>
+                            <option value="medium">Medium</option>
+                            <option value="high">High</option>
+                        </select>
+                    </div>
+                    <div class="calc-actions">
+                        <button class="calc-submit" type="button">Calculate</button>
+                    </div>
+                </div>
+
+                <div class="calc-panel" data-type="stay" id="calc-stay" role="tabpanel">
+                    <div class="calc-field">
+                        <label for="stay-type">Stay Type</label>
+                        <select id="stay-type" name="stay-type">
+                            <option value="hotel">Hotel</option>
+                            <option value="hostel">Hostel</option>
+                            <option value="eco">Eco Lodge</option>
+                            <option value="camping">Camping</option>
+                        </select>
+                    </div>
+                    <div class="calc-field">
+                        <label for="stay-nights">Nights Stayed</label>
+                        <input id="stay-nights" name="stay-nights" type="number" min="0" step="1" placeholder="e.g. 3">
+                    </div>
+                    <div class="calc-actions">
+                        <button class="calc-submit" type="button">Calculate</button>
+                    </div>
+                </div>
+
+                <div class="calc-panel" data-type="water" id="calc-water" role="tabpanel">
+                    <div class="calc-field">
+                        <label for="showers-week">Showers per Week</label>
+                        <input id="showers-week" name="showers-week" type="number" min="0" step="1" placeholder="e.g. 7">
+                    </div>
+                    <div class="calc-field">
+                        <label for="shower-minutes">Minutes per Shower</label>
+                        <input id="shower-minutes" name="shower-minutes" type="number" min="0" step="1" placeholder="e.g. 8">
+                    </div>
+                    <div class="calc-field">
+                        <label for="laundry-loads">Laundry Loads per Week</label>
+                        <input id="laundry-loads" name="laundry-loads" type="number" min="0" step="1" placeholder="e.g. 2">
+                    </div>
+                    <div class="calc-actions">
+                        <button class="calc-submit" type="button">Calculate</button>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="calc-result-card">
+                <h3>Your Carbon Footprint</h3>
+                <div class="calc-result-body">
+                    <div class="calc-result-icon" aria-hidden="true"></div>
+                    <div class="calc-result-value">0.00 kg CO2e</div>
+                    <p class="calc-result-detail">Select a tab and enter your values to estimate emissions.</p>
+                </div>
+            </aside>
+        </section>
+
+        <section class="support-projects">
+            <h2>Support projects and sustainable development worldwide</h2>
+            <div class="support-grid">
+                <div class="support-images">
+                    <img src="./IMAGES/calculator text/1.png" alt="Wind turbines at sunset">
+                    <img src="./IMAGES/calculator text/2.png" alt="Hands holding a seedling">
+                    <img src="./IMAGES/calculator text/3.png" alt="Local farmer in the field">
+                    <img src="./IMAGES/calculator text/4.png" alt="Notebook with recycle message">
+                </div>
+                <div class="support-text">
+                    <p>When you offset your carbon footprint, you're not just reducing emissions — 
+                        you're empowering communities and restoring ecosystems. By supporting certified
+                        climate projects across the globe, you help fund clean energy initiatives, forest conservation,
+                        regenerative agriculture, and sustainable livelihoods. These projects don’t just tackle climate
+                        change — they also improve access to clean water, education, biodiversity protection, and economic
+                        resilience for vulnerable communities. It’s a way to make your impact local and global — all at once.</p>
+                    <p>Offsetting your emissions goes beyond numbers — it’s about driving real change. From wind farms in
+                    India to reforestation efforts in the Amazon and solar cookstoves in rural Africa, certified carbon
+                offset projects create lasting environmental and social benefits. By contributing to these initiatives, 
+                you’re helping reduce global greenhouse gases while supporting health, education, and job opportunities 
+                in under-resourced communities. It’s not just about reducing harm — it’s about regenerating balance and 
+                building a better world for all.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-head">
+            <div class="footer-head-text">
+                <h2>JOIN ECOTRAILS FAMILY</h2>
+                <p>Be part of our growing community-explore sustainably, plant trees, and walk the path of change.</p>
+            </div>
+            <form class="subscription-form">
+                <div class="input-group">
+                    <input type="email" placeholder="Your Email Address" class="email-input" required>
+                    <button type="submit" class="subscribe-button">SUBSCRIBE</button>
+                </div>
+            </form>
+        </div>
+        <div class="footer-body">
+            <div class="footer-logo-container">
+                <div class="logo" id="redirectImage">
+                    <img src="./name.png" alt="Greenery Logo">
+                </div>
+            </div>
+            <div class="aboutUs-container">
+                <h2>ABOUT US</h2>
+                <p>Welcome to the wild heart of mindful travel.</p><br>
+                <p>Born from a love for untouched landscapes and sustainable journeys, we guide nature lovers toward
+                    meaningful outdoor experiences while giving back to the Earth. Through guided eco-treks,
+                    tree-planting campaigns, and community-led conservation, we invite you to walk a little softer and
+                    live a little closer to the Earth. <a href="aboutUs.html">Learn More ...</a></p>
+            </div>
+            <div class="quick-link-wrapper">
+                <div class="quick-link-container">
+                    <h2>QUICK LINKS</h2>
+                    <div class="quick-links">
+                        <p><span class="uiw--d-arrow-right"></span>Campaigns</p>
+                        <p><span class="uiw--d-arrow-right"></span>Programs</p>
+                        <p><span class="uiw--d-arrow-right"></span>Volunteer</p>
+                        <p><span class="uiw--d-arrow-right"></span>FAQs</p>
+                        <p><span class="uiw--d-arrow-right"></span><a href="contact.html">Contact</a></p>
+                    </div>
+                </div>
+                <div class="quick-info">
+                    <span class="tabler--phone"></span><span>+977 98074388212</span>
+                    <span class="ic--outline-mail"></span> <span>info@ecotrails.com</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-final">
+            <p>&copy; 2025 Eco Trails. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
